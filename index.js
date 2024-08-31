@@ -39,9 +39,6 @@ todoAddButton.addEventListener("click", ()=>{
     todoList.removeChild(listItem);
   });
 
-  // TODO作成処理
-  console.log(val);
-
   // テキストボックスの中身を空にする
   todoInputTextBox.value = "";
 });
