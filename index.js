@@ -23,6 +23,14 @@ todoAddButton.addEventListener("click", ()=>{
   listItem.className = "todo-li";
   listItem.innerHTML = "ほげほげ";
 
+  // <button type="button"> 要素を作成
+  const deleteButton = document.createElement("button");
+  deleteButton.type = "button"
+  deleteButton.innerHTML = "DELETE";
+
+  // listItemに、deleteButtonを子要素として追加
+  listItem.appendChild(deleteButton);
+
   // todoListにlistItemを子要素として追加
   todoList.appendChild(listItem);
 
